@@ -1,0 +1,213 @@
+.history {
+  & > .private__tips {
+    margin: 6px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-radius: 2px;
+
+    div {
+      display: flex;
+      justify-content: flex-start;
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #333;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+      }
+
+      em {
+        height: 34px;
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 1;
+        color: #ff4d70;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+    }
+
+    > i {
+      font-size: 16px;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.45);
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+
+  .history__list {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #fafafa;
+
+    .history__list__head {
+      display: flex;
+      align-items: center;
+      background: #fafafa;
+      height: 40px;
+
+      p {
+        flex: 1;
+        display: flex;
+
+        &:first-child {
+          // padding: 0 40px;
+          span {
+            &:first-child {
+              flex: 3;
+              padding: 0 40px 0 0;
+            }
+
+            padding: 0 40px;
+          }
+        }
+
+        span {
+          flex: 1;
+          font-size: 14px;
+          line-height: 20px;
+          color: rgba(0, 0, 0, 0.75);
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+    }
+
+    .history__list__item {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      margin-bottom: 10px;
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      display: flex;
+      background: #fff;
+
+      .infoNum {
+        .infoNumChildItem {
+          display: flex;
+          border-bottom: 1px solid #eee;
+          padding: 12px 40px;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          .info {
+            display: flex;
+
+            img {
+              width: 60px;
+              height: 60px;
+              margin-right: 10px;
+            }
+          }
+
+          .detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p {
+              font-size: 12px;
+              line-height: 18px;
+              color: rgba(0, 0, 0, 0.65);
+              font-weight: 400;
+            }
+
+            .priceWeight {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              span {
+                font-size: 12px;
+                line-height: 18px;
+                color: rgba(0, 0, 0, 0.65);
+                font-weight: 400;
+              }
+            }
+          }
+
+          .num {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+
+      .countOperate {
+        display: flex;
+
+        .countBox {
+          border-left: 1px solid #eee;
+          padding: 12px 0 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          .countDetail {
+            width: 180px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 12px;
+            line-height: 18px;
+            color: rgba(0, 0, 0, 0.65);
+            font-weight: 400;
+          }
+        }
+
+        .operate {
+          border-left: 1px solid #eee;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+
+          .button-n {
+            font-size: 14px;
+            line-height: 38px;
+            color: #fff;
+            background: #f64f6f;
+            padding: 0 32px;
+            border: 1px solid #f64f6f;
+            transition: all 0.3s;
+            border-radius: 2px;
+            white-space: nowrap;
+          }
+
+          .delete {
+            color: rgba(0, 0, 0, 0.45);
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 22px;
+            display: inline-block;
+            margin: 0 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.flex3 {
+  flex: 3;
+}

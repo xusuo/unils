@@ -1,0 +1,98 @@
+.el-form-item {
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+.el-form--inline .el-form-item {
+  margin-right: 5px;
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 5px;
+  }
+}
+.el-form--inline .el-form-item__content {
+  line-height: 38px;
+  height: 38px;
+}
+.el-form-item__label {
+  font-size: @font-size;
+}
+.el-input__inner {
+  padding: 0 10px;
+  font-size: @font-size;
+}
+.el-input__inner,
+.el-form-item.is-error .el-input__inner,
+.el-input--medium .el-input__inner {
+  height: @primary-input-height;
+  line-height: @primary-input-height;
+  border-radius: @primary-radius;
+}
+.el-textarea__inner {
+  border-radius: @primary-radius;
+  padding: 5px 10px;
+  font-family: '微软雅黑';
+}
+
+.el-input-number {
+  line-height: 30px;
+}
+
+.el-select-dropdown {
+  z-index: 7010 !important;
+}
+
+.el-input.is-active .el-input__inner,
+.el-input__inner:focus {
+  border-color: @primary-color;
+  outline: 0;
+}
+
+.el-checkbox__label {
+  font-size: @font-size;
+}
+
+// 修改select箭头图标
+// .el-select .el-input .el-select__caret {
+//   color: #666;
+//   &::before {
+//     content: '\E60C';
+//   }
+// }
+// .el-cascader .el-icon-arrow-down {
+//   color: #666;
+//   &::before {
+//     content: '\E60B';
+//   }
+// }
+
+.el-range-editor.el-input__inner {
+  // margin-top: 5px;
+  display: flex;
+  padding: 0px 5px;
+}
+
+.el-input-number.is-controls-right .el-input-number__decrease,
+.el-input-number.is-controls-right .el-input-number__increase {
+  line-height: 15px;
+}
+
+.el-date-editor .el-range-separator {
+  line-height: @primary-input-height;
+}
+
+.el-input-number.is-controls-right .el-input-number__decrease,
+.el-input-number.is-controls-right .el-input-number__increase {
+  line-height: 18px;
+}
+
+
+// input前面的select
+.el-select.inner-input-select .el-input {
+  width: 130px;
+}
+.input-with-select .el-input-group__prepend {
+  background-color: #fff;
+}

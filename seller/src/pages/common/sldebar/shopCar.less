@@ -1,0 +1,229 @@
+.shopCar {
+  display: flex;
+  flex-direction: column;
+  background: #dbdbdb;
+  height: 100%;
+
+  .listBox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .titleHead {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 28px;
+      background: rgba(0, 0, 0, 0.65);
+
+      span {
+        font-size: 12px;
+        line-height: 18px;
+        color: hsla(0, 0%, 100%, 0.65);
+        font-weight: 400;
+        flex: 1;
+        text-align: center;
+      }
+    }
+
+    .listItemBox {
+      flex: 1;
+      overflow: auto;
+
+      .listItem {
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        background: #fff;
+
+        .detailBox {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          .productName {
+            max-width: 200px;
+            font-size: 12px;
+            line-height: 18px;
+            color: rgba(0, 0, 0, 0.45);
+            font-weight: 400;
+            margin-bottom: 3px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+
+          .detail {
+            display: flex;
+
+            .mainPic {
+              width: 54px;
+              height: 54px;
+              margin-right: 5px;
+            }
+
+            .productNums {
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+
+              .numsTop {
+                margin-bottom: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .weight {
+                  font-size: 12px;
+                  line-height: 18px;
+                  color: #333;
+                  font-weight: 400;
+                }
+
+                strong {
+                  font-size: 12px;
+                  line-height: 15px;
+                  color: #eb000c;
+                  font-weight: 400;
+                  margin-right: 2px;
+                }
+
+                .dele{
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .countBox {
+    height: 250px;
+    box-sizing: border-box;
+    padding: 8px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    .tipsBox {
+      height: 28px;
+      background: rgba(0, 0, 0, 0.65);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.42);
+      border-radius: 4px;
+      padding: 0 6px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 12px;
+
+      span {
+        font-size: 12px;
+        line-height: 17px;
+        color: hsla(0, 0%, 100%, 0.65);
+        font-weight: 400;
+      }
+
+      strong {
+        font-size: 14px;
+        line-height: 17px;
+        color: hsla(0, 0%, 100%, 0.95);
+        font-weight: 700;
+      }
+
+      .arrowBox {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .arrow {
+        width: 20px;
+        height: 10px;
+        background: rgba(0, 0, 0, 0.65);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 22px;
+        margin: 0 auto;
+        -webkit-transform: rotate(74deg) skew(60deg);
+        transform: rotate(74deg) skew(60deg);
+      }
+    }
+
+    .countPtext {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+
+      span {
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.45);
+        font-weight: 400;
+      }
+
+      strong {
+        font-size: 12px;
+        line-height: 14px;
+        color: #eb000c;
+        font-weight: 700;
+      }
+
+      .totalCount {
+        font-size: 16px;
+        line-height: 20px;
+        color: #eb000c;
+        font-weight: 700;
+      }
+    }
+
+    .makeOrder {
+      padding: 38px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .orderButton {
+        width: 180px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background: #ff4d70;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .clearAll {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.45);
+        font-weight: 400;
+        text-decoration: underline;
+        cursor: pointer;
+        width: 180px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.el-input-number {
+  line-height: 26px;
+}

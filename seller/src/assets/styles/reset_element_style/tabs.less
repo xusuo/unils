@@ -1,0 +1,32 @@
+.system-config-tabs {
+  &.el-tabs--card > .el-tabs__header .el-tabs__nav {
+    border: 1px solid #f6f6f6;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: primary-radius;
+  }
+  &.el-tabs--card > .el-tabs__header .el-tabs__item {
+    position: relative;
+    top: 2px;
+    border-bottom: 1px solid #f6f6f6;
+    border-left: 1px solid #f6f6f6;
+  }
+  &.el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+    position: relative;
+    top: 3px;
+    border: 1px solid #e0e0e0;
+    border-top: 2px solid @primary-color;
+    border-bottom: 1px solid #f6f6f6;
+  }
+  .el-tabs__item {
+    color: #666;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .el-tabs__item:hover {
+    color: @primary-hover-color;
+  }
+
+  .el-tabs__item.is-active {
+    color: @primary-color;
+  }
+}

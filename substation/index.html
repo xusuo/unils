@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>分站后台管理系统</title>
+    <link rel="shortcut icon" href="/static/images/bitbug_favicon.ico" />
+    <!-- Font Awesome cdn -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.bootcss.com/element-ui/2.5.4/theme-chalk/index.css" rel="stylesheet"> -->
+    <script src="http://pub.91falipin.com/vue.2.5.2.min.js"></script>
+    <script src="http://pub.91falipin.com/element-ui.2.4.6.js"></script>
+    <script src="http://pub.91falipin.com/moment.2.22.2.min.js"></script>
+    <script src="http://pub.91falipin.com/axios.0.18.0.min.js"></script>
+    <script src="http://pub.91falipin.com/echarts.4.2.1.min.js"></script>
+
+    <style>
+      .loading-spinner {
+        width: 100px;
+        height: 100px;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .atom-spinner,
+      .atom-spinner {
+        box-sizing: border-box;
+      }
+      .atom-spinner .spinner-inner {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      .atom-spinner .spinner-line {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        animation-duration: 1s;
+        border-left-width: 2.4px;
+        border-top-width: 2.4px;
+        border-left-color: #3677ff;
+        border-left-style: solid;
+        border-top-style: solid;
+        border-top-color: transparent;
+      }
+      .atom-spinner .spinner-line:first-child {
+        animation: atom-spinner-animation-1-data-v-59f49670 1s linear infinite;
+        transform: rotate(120deg) rotateX(66deg) rotate(0deg);
+      }
+      .atom-spinner .spinner-line:nth-child(2) {
+        animation: atom-spinner-animation-2-data-v-59f49670 1s linear infinite;
+        transform: rotate(240deg) rotateX(66deg) rotate(0deg);
+      }
+      .atom-spinner .spinner-line:nth-child(3) {
+        animation: atom-spinner-animation-3-data-v-59f49670 1s linear infinite;
+        transform: rotate(1turn) rotateX(66deg) rotate(0deg);
+      }
+      .atom-spinner .spinner-circle {
+        display: block;
+        position: absolute;
+        color: #3677ff;
+        font-size: 14.4px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @keyframes atom-spinner-animation-1-data-v-59f49670 {
+        to {
+          transform: rotate(120deg) rotateX(66deg) rotate(1turn);
+        }
+      }
+      @keyframes atom-spinner-animation-2-data-v-59f49670 {
+        to {
+          transform: rotate(240deg) rotateX(66deg) rotate(1turn);
+        }
+      }
+      @keyframes atom-spinner-animation-3-data-v-59f49670 {
+        to {
+          transform: rotate(1turn) rotateX(66deg) rotate(1turn);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div style="text-align: center;position: absolute;top: 45%;left: 0; right: 0;">
+        <div class="atom-spinner" style="height: 60px; width: 60px;display: inline-block;">
+          <div class="spinner-inner">
+            <div
+              class="spinner-line"
+              style="animation-duration: 1000ms; border-left-width: 2.4px; border-top-width: 2.4px; border-left-color: #3677ff;"
+            ></div>
+            <div
+              class="spinner-line"
+              style="animation-duration: 1000ms; border-left-width: 2.4px; border-top-width: 2.4px; border-left-color: #3677ff;"
+            ></div>
+            <div
+              class="spinner-line"
+              style="animation-duration: 1000ms; border-left-width: 2.4px; border-top-width: 2.4px; border-left-color: #3677ff;"
+            ></div>
+            <div class="spinner-circle" style="color: #3677ff; font-size: 14.4px;">●</div>
+          </div>
+        </div>
+        <div style="color: #3677ff;font-size: 12px;">正在加载中...</div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

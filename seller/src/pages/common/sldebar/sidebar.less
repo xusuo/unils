@@ -1,0 +1,328 @@
+@import url('../../../assets/styles/variables.less');
+
+.rightBarBox,
+.rightBar {
+  display: flex;
+  width: 316px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -280px;
+  z-index: 1000;
+  transition: all 0.5s;
+
+  .iconBox {
+    width: 36px;
+    min-width: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0 0;
+    background: rgba(0, 0, 0, 0.95);
+    box-sizing: border-box;
+
+    .hoverIcon {
+      width: 100%;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      transition: all 0.2s;
+      position: relative;
+
+      span {
+        height: 30px;
+        width: 80px;
+        position: absolute;
+        left: 40px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background: #ff4d70;
+        border-radius: 15px 0 0 15px;
+        font-size: 14px;
+        line-height: 1;
+        color: #fff;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        visibility: hidden;
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        background: #ff4d70;
+
+        span {
+          visibility: visible;
+          left: -80px;
+        }
+      }
+
+      .fixedServe {
+        visibility: visible;
+        left: -80px;
+      }
+    }
+
+    .iconItem {
+      cursor: pointer;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      position: relative;
+
+      .iconfont {
+        font-size: 20px;
+        line-height: 1;
+        color: hsla(0, 0%, 100%, 0.85);
+        font-weight: 400;
+      }
+    }
+
+    .shopCar {
+      width: 100%;
+      height: 100px;
+      background: hsla(0, 0%, 100%, 0.05);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: all 0.2s;
+      color: #ff4d70;
+
+      .el-icon-shopping-cart-2 {
+        position: relative;
+        left: -2px;
+        color: #ff4d70;
+      }
+
+      &:hover {
+        background: #ff4d70;
+        color: #fff;
+
+        > .el-icon-shopping-cart-2 {
+          color: #fff;
+        }
+      }
+
+      &.iconActive {
+        color: #fff;
+
+        > .el-icon-shopping-cart-2 {
+          color: #fff;
+        }
+      }
+
+      strong {
+        font-size: 12px;
+        line-height: 18px;
+
+        font-weight: 700;
+      }
+    }
+
+    .iconActive {
+      background: #ff4d70;
+    }
+  }
+
+  .contentBox {
+    width: 280px;
+    background: #2e2f30;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1010;
+
+    .addvice {
+      padding: 30px 16px 30px 10px;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: 14px;
+        line-height: 20px;
+        color: hsla(0, 0%, 100%, 0.85);
+        font-weight: 700;
+        margin-bottom: 3px;
+      }
+
+      .desc {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: hsla(0, 0%, 100%, 0.65);
+        margin-bottom: 7px;
+      }
+
+      .textAreaInput {
+        width: 100%;
+        height: 120px;
+        box-sizing: border-box;
+        color: hsla(0, 0%, 100%, 0.85);
+        background: hsla(0, 0%, 100%, 0.18);
+        border-radius: 2px;
+        margin-bottom: 20px;
+        border: 1px solid hsla(0, 0%, 100%, 0.2);
+      }
+
+      .feedback {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .submit {
+          width: 164px;
+          height: 34px;
+          background: #ff4d70;
+          font-size: 14px;
+          line-height: 20px;
+          color: hsla(0, 0%, 100%, 0.85);
+          font-weight: 400;
+          border-radius: 2px;
+          transition: all 0.2s;
+          box-sizing: border-box;
+        }
+      }
+    }
+
+    .message {
+      padding: 30px 0;
+
+      .title {
+        padding: 0 12px;
+        font-size: 14px;
+        line-height: 20px;
+        color: hsla(0, 0%, 100%, 0.85);
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+    }
+
+    .helpCenterBox {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+
+      .helpCenter {
+        padding: 10px 10px 0;
+
+        .plantServe {
+          padding: 30px 0;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          .stationName {
+            font-size: 14px;
+            line-height: 20px;
+            color: hsla(0, 0%, 100%, 0.85);
+            font-weight: 700;
+            margin-bottom: 14px;
+          }
+
+          .erCodeImg {
+            margin: 0 auto;
+            width: 180px;
+            max-height: 300px;
+            background: #fff;
+            border: 5px solid #fff;
+          }
+        }
+      }
+
+      .questionSearch {
+        margin-bottom: 100px;
+
+        .solveQuit {
+          width: 100%;
+          height: 28px;
+          background: hsla(0, 0%, 100%, 0.1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          margin-bottom: 10px;
+
+          span {
+            font-size: 14px;
+            line-height: 20px;
+            color: hsla(0, 0%, 100%, 0.6);
+            font-weight: 700;
+          }
+        }
+
+        .tips {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 0 12px;
+          margin-bottom: 14px;
+
+          span {
+            font-size: 14px;
+            line-height: 20px;
+            color: hsla(0, 0%, 100%, 0.85);
+            font-weight: 700;
+          }
+
+          .lookAll {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            .all {
+              font-size: 14px;
+              line-height: 20px;
+              color: #ff4d70;
+              font-weight: 700;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .commQues {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0 12px;
+
+          .quesItem {
+            font-size: 14px;
+            line-height: 20px;
+            color: hsla(0, 0%, 100%, 0.85);
+            font-weight: 400;
+            text-decoration: underline;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.openBar {
+  right: 0;
+}
+
+.empty {
+  // display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
+}
+
+.emptyNone {
+  visibility: hidden;
+}
